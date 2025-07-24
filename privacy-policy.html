@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - トクリス</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%);
+            border-radius: 12px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .header-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #e55a2b;
+        }
+
+        .back-link::before {
+            content: '← ';
+            margin-right: 5px;
+        }
+
+        /* Content Section */
+        .content {
+            background: white;
+            margin: 40px 0;
+            padding: 60px 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .last-updated {
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .intro {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-left: 4px solid #ff6b35;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ff6b35;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 25px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #fff8f0;
+            border: 1px solid #ffd4a3;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .external-link {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: white;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .email-contact {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .divider {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ddd, transparent);
+            margin: 40px 0;
+        }
+
+        .note-box {
+            background: #e8f4fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .content {
+                padding: 40px 25px;
+                margin: 20px 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .header-title {
+                font-size: 1.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .intro {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="app-icon"></div>
+            <h1 class="header-title">プライバシーポリシー</h1>
+            <a href="index.html" class="back-link">トップページに戻る</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <p class="last-updated"><strong>最終更新日：2025年7月22日</strong></p>
+            
+            <div class="intro">
+                <p>このプライバシーポリシー（以下「本ポリシー」）は、当アプリ（以下「本アプリ」）におけるユーザー情報の取り扱いについて説明するものです。本アプリを利用することで、本ポリシーに同意したものとみなされます。</p>
+            </div>
+
+            <hr class="divider">
+
+            <h2>第1条（収集する情報）</h2>
+            <p>本アプリでは、以下の情報を収集・使用することがあります。</p>
+            
+            <h3>1. ユーザー入力情報：</h3>
+            <ul>
+                <li>商品名、価格、店舗名などの買い物リスト情報</li>
+                <li>チェック状況、数量、価格履歴情報など</li>
+            </ul>
+
+            <h3>2. 端末情報：</h3>
+            <ul>
+                <li>OSバージョン、機種、言語設定など（匿名）</li>
+            </ul>
+
+            <h3>3. 広告関連情報（Google AdMob）：</h3>
+            <ul>
+                <li>広告ID（AAID/IDFA）</li>
+                <li>アプリ使用情報（広告の表示/クリック履歴など）</li>
+                <li>パーソナライズ広告の配信に関連する情報</li>
+            </ul>
+
+            <div class="note-box">
+                <p><strong>Google AdMobについて：</strong><br>
+                Google AdMobは、関心に基づいた広告（パーソナライズ広告）を表示するため、ユーザーの一部情報を収集し利用する場合があります。</p>
+            </div>
+
+            <hr class="divider">
+
+            <h2>第2条（情報の利用目的）</h2>
+            <p>本アプリは、収集した情報を以下の目的で使用します：</p>
+            <ul>
+                <li>商品リスト・価格履歴機能の提供</li>
+                <li>最安値表示や合計金額の計算などの利便性向上</li>
+                <li>バグ修正・改善のための匿名統計データ分析</li>
+                <li>Google AdMobによる広告配信と最適化（パーソナライズ広告含む）</li>
+            </ul>
+
+            <hr class="divider">
+
+            <h2>第3条（情報の保存場所と管理）</h2>
+            <ul>
+                <li>アプリの利用データは、基本的にユーザー端末内のローカルデータベース（SQLite）に保存されます。</li>
+                <li>広告データは、Google AdMobのサーバーで管理され、アプリ開発者はその内容を直接取得・保管しません。</li>
+                <li>当アプリでは、外部サーバーにユーザー個人情報を保管することはありません。</li>
+            </ul>
+
+            <hr class="divider">
+
+            <h2>第4条（第三者提供）</h2>
+            <p>以下の場合を除き、ユーザー情報を第三者に提供することはありません：</p>
+            <ul>
+                <li>ユーザーの同意がある場合</li>
+                <li>法令に基づき開示が必要な場合</li>
+            </ul>
+
+            <hr class="divider">
+
+            <h2>第5条（外部サービスの利用）</h2>
+            <p>本アプリは、以下の外部サービスを使用しています：</p>
+            
+            <div class="highlight-box">
+                <h3>Google AdMob（広告配信）</h3>
+                <p>ユーザーの広告識別子や使用傾向に基づいて、パーソナライズ広告を表示します。</p>
+                <p>→ <a href="https://policies.google.com/technologies/ads?hl=ja" class="external-link" target="_blank" rel="noopener">Googleの広告に関するポリシー</a></p>
+            </div>
+
+            <hr class="divider">
+
+            <h2>第6条（ユーザーの権利）</h2>
+            <p>ユーザーは以下の操作をいつでも行うことができます：</p>
+            <ul>
+                <li>アプリ内のデータ削除</li>
+                <li>広告設定の変更（端末の「広告設定」からパーソナライズ広告を無効にできます）</li>
+            </ul>
+
+            <div class="warning-box">
+                <p><strong>広告設定の変更方法：</strong><br>
+                <strong>Android：</strong> 設定 → Google → 広告 → 広告のカスタマイズをオフにする</p>
+            </div>
+
+            <hr class="divider">
+
+            <h2>第7条（ポリシーの変更）</h2>
+            <p>本ポリシーは、必要に応じて事前通知なく改訂されることがあります。改訂後の内容はアプリ内または外部公開URLにて告知されます。</p>
+
+            <div class="contact-section">
+                <h2>お問い合わせ</h2>
+                <p>本ポリシーに関するお問い合わせは、以下の連絡先までご連絡ください：</p>
+                <p class="email-contact">📧 メールアドレス：<strong>support@tokuris.app</strong></p>
+            </div>
+
+            <hr class="divider">
+
+            <h2>補足（Google Play / App Store 提出対応）</h2>
+            <p>本アプリでは広告を表示しています。Google Play Console および App Store におけるデータ収集・広告表示の申告に対応しています。</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Tenpun Studio</p>
+        </div>
+    </footer>
+</body>
+</html>
