@@ -254,80 +254,90 @@
 
             <hr class="divider">
 
-            <h2>第1条（収集する情報）</h2>
-            <p>本アプリでは、以下の情報を収集・使用することがあります。</p>
-            
-            <h3>1. ユーザー入力情報：</h3>
-            <ul>
-                <li>商品名、価格、店舗名などの買い物リスト情報</li>
-                <li>チェック状況、数量、価格履歴情報など</li>
-            </ul>
+           <h2>第1条（収集する情報）</h2>
+<p>本アプリでは、以下の情報を収集・使用することがあります。</p>
 
-            <h3>2. 端末情報：</h3>
-            <ul>
-                <li>OSバージョン、機種、言語設定など（匿名）</li>
-            </ul>
+<h3>1. ユーザー入力情報：</h3>
+<ul>
+    <li>商品名、価格、店舗名などの買い物リスト情報</li>
+    <li>チェック状況、数量、価格履歴情報など</li>
+</ul>
 
-            <h3>3. 広告関連情報（Google AdMob）：</h3>
-            <ul>
-                <li>広告ID（AAID/IDFA）</li>
-                <li>アプリ使用情報（広告の表示/クリック履歴など）</li>
-                <li>パーソナライズ広告の配信に関連する情報</li>
-            </ul>
+<h3>2. 端末情報：</h3>
+<ul>
+    <li>OSバージョン、機種、言語設定など（匿名）</li>
+</ul>
 
-            <div class="note-box">
-                <p><strong>Google AdMobについて：</strong><br>
-                Google AdMobは、関心に基づいた広告（パーソナライズ広告）を表示するため、ユーザーの一部情報を収集し利用する場合があります。</p>
-            </div>
+<h3>3. 広告関連情報（Google AdMob）：</h3>
+<ul>
+    <li>広告ID（AAID/IDFA）</li>
+    <li>アプリ使用情報（広告の表示/クリック履歴など）</li>
+    <li>パーソナライズ広告の配信に関連する情報</li>
+</ul>
 
-            <hr class="divider">
+<h3>4. バックアップ関連情報（Google Drive）：</h3>
+<ul>
+    <li>ユーザーの買い物リストや価格履歴データ（同期・バックアップ目的）</li>
+</ul>
 
-            <h2>第2条（情報の利用目的）</h2>
-            <p>本アプリは、収集した情報を以下の目的で使用します：</p>
-            <ul>
-                <li>商品リスト・価格履歴機能の提供</li>
-                <li>最安値表示や合計金額の計算などの利便性向上</li>
-                <li>バグ修正・改善のための匿名統計データ分析</li>
-                <li>Google AdMobによる広告配信と最適化（パーソナライズ広告含む）</li>
-            </ul>
+<div class="note-box">
+    <p><strong>Google AdMobについて：</strong><br>
+    Google AdMobは、関心に基づいた広告（パーソナライズ広告）を表示するため、ユーザーの一部情報を収集し利用する場合があります。</p>
 
-            <hr class="divider">
+    <p><strong>Google Driveについて：</strong><br>
+    バックアップ機能を提供するため、ユーザーの一部データをGoogle Driveに保存する場合があります。保存されたデータはユーザーが削除するまで保持されます。</p>
+</div>
 
-            <h2>第3条（情報の保存場所と管理）</h2>
-            <ul>
-                <li>アプリの利用データは、基本的にユーザー端末内のローカルデータベース（SQLite）に保存されます。</li>
-                <li>広告データは、Google AdMobのサーバーで管理され、アプリ開発者はその内容を直接取得・保管しません。</li>
-                <li>当アプリでは、外部サーバーにユーザー個人情報を保管することはありません。</li>
-            </ul>
+<hr class="divider">
 
-            <hr class="divider">
+<h2>第2条（情報の利用目的）</h2>
+<p>本アプリは、収集した情報を以下の目的で使用します：</p>
+<ul>
+    <li>商品リスト・価格履歴機能の提供</li>
+    <li>最安値表示や合計金額の計算などの利便性向上</li>
+    <li>バグ修正・改善のための匿名統計データ分析</li>
+    <li>Google AdMobによる広告配信と最適化（パーソナライズ広告含む）</li>
+    <li>Google Driveを使用したバックアップ・同期機能の提供</li>
+</ul>
 
-            <h2>第4条（第三者提供）</h2>
-            <p>以下の場合を除き、ユーザー情報を第三者に提供することはありません：</p>
-            <ul>
-                <li>ユーザーの同意がある場合</li>
-                <li>法令に基づき開示が必要な場合</li>
-            </ul>
+<hr class="divider">
 
-            <hr class="divider">
+<h2>第3条（情報の保存場所と管理）</h2>
+<ul>
+    <li>アプリの利用データは、基本的にユーザー端末内のローカルデータベース（SQLite）に保存されます。</li>
+    <li>バックアップ機能を使用した場合、ユーザーのデータはGoogle Drive上に暗号化されて保存されます。</li>
+    <li>広告データは、Google AdMobのサーバーで管理され、アプリ開発者はその内容を直接取得・保管しません。</li>
+    <li>当アプリでは、その他外部サーバーにユーザー個人情報を保管することはありません。</li>
+</ul>
 
-            <h2>第5条（外部サービスの利用）</h2>
-            <p>本アプリは、以下の外部サービスを使用しています：</p>
-            
-            <div class="highlight-box">
-                <h3>Google AdMob（広告配信）</h3>
-                <p>ユーザーの広告識別子や使用傾向に基づいて、パーソナライズ広告を表示します。</p>
-                <p>→ <a href="https://policies.google.com/technologies/ads?hl=ja" class="external-link" target="_blank" rel="noopener">Googleの広告に関するポリシー</a></p>
-            </div>
+<hr class="divider">
 
-            <hr class="divider">
+<h2>第5条（外部サービスの利用）</h2>
+<p>本アプリは、以下の外部サービスを使用しています：</p>
 
-            <h2>第6条（ユーザーの権利）</h2>
-            <p>ユーザーは以下の操作をいつでも行うことができます：</p>
-            <ul>
-                <li>アプリ内のデータ削除</li>
-                <li>広告設定の変更（端末の「広告設定」からパーソナライズ広告を無効にできます）</li>
-            </ul>
+<div class="highlight-box">
+    <h3>Google AdMob（広告配信）</h3>
+    <p>ユーザーの広告識別子や使用傾向に基づいて、パーソナライズ広告を表示します。</p>
+    <p>→ <a href="https://policies.google.com/technologies/ads?hl=ja" class="external-link" target="_blank" rel="noopener">Googleの広告に関するポリシー</a></p>
+</div>
+
+<div class="highlight-box">
+    <h3>Google Drive（バックアップ・同期）</h3>
+    <p>ユーザーの買い物リストや価格履歴データをバックアップ・同期するために使用します。</p>
+    <p>→ <a href="https://www.google.com/intl/ja/drive/terms-of-service/" class="external-link" target="_blank" rel="noopener">Google Drive 利用規約</a></p>
+    <p>→ <a href="https://policies.google.com/privacy" class="external-link" target="_blank" rel="noopener">Google プライバシーポリシー</a></p>
+</div>
+
+<hr class="divider">
+
+<h2>第6条（ユーザーの権利）</h2>
+<p>ユーザーは以下の操作をいつでも行うことができます：</p>
+<ul>
+    <li>アプリ内のデータ削除</li>
+    <li>広告設定の変更（端末の「広告設定」からパーソナライズ広告を無効にできます）</li>
+    <li>バックアップデータの削除・同期解除（Google Drive上のデータを削除することで可能）</li>
+</ul>
+
 
             <div class="warning-box">
                 <p><strong>広告設定の変更方法：</strong><br>
